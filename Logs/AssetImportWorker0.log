@@ -220,3 +220,4 @@ Received Import Request.
 Start importing Assets/StarSparrow/Prefabs/Modules using Guid(c262adfd858cafd47a0913f3f3c7d12f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb947267b827a0fe9a0c90c40bfa93fd') in 0.011780 seconds 
   Import took 0.015637 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
