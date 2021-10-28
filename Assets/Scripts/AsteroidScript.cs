@@ -7,18 +7,24 @@ using UnityEngine;
 public class AsteroidScript : MonoBehaviour
 {
     public float Speed = 6;
-     Rigidbody rb;
+     Rigidbody rig;
+
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        rb.velocity = Vector3.back * Speed + Vector3.right * Random.Range(-1, 1);
+        rig = GetComponent<Rigidbody>();
+        rig.velocity = Vector3.back * Speed + Vector3.right * Random.Range(-1, 1);
+        rig.angularVelocity = new Vector3(Random.Range(-5, 5), Random.Range(-5, 5), Random.Range(-5, 5));
     }
 
-    // Update is called once per frame
-    void Update()
+    
+    void Colision()
     {
-        
+
     }
+    
+        
+   
 }

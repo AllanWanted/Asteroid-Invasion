@@ -134,13 +134,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: BigAsteroid Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 3578116103135841889, guid: dd8c99a9fac9ecb4e9ede5659211e531, type: 3}
+      propertyPath: m_TagString
+      value: Asteroid
+      objectReference: {fileID: 0}
     - target: {fileID: 3584795206622080485, guid: dd8c99a9fac9ecb4e9ede5659211e531, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3584795206622080485, guid: dd8c99a9fac9ecb4e9ede5659211e531, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3792926
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584795206622080485, guid: dd8c99a9fac9ecb4e9ede5659211e531, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3792926
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584795206622080485, guid: dd8c99a9fac9ecb4e9ede5659211e531, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3792926
+      objectReference: {fileID: 0}
+    - target: {fileID: 3584795206622080485, guid: dd8c99a9fac9ecb4e9ede5659211e531, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.25
+      value: 0.25193
       objectReference: {fileID: 0}
     - target: {fileID: 3584795206622080485, guid: dd8c99a9fac9ecb4e9ede5659211e531, type: 3}
       propertyPath: m_LocalPosition.y
@@ -148,7 +164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3584795206622080485, guid: dd8c99a9fac9ecb4e9ede5659211e531, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.45
+      value: 7.8900003
       objectReference: {fileID: 0}
     - target: {fileID: 3584795206622080485, guid: dd8c99a9fac9ecb4e9ede5659211e531, type: 3}
       propertyPath: m_LocalRotation.w
@@ -177,6 +193,18 @@ PrefabInstance:
     - target: {fileID: 3584795206622080485, guid: dd8c99a9fac9ecb4e9ede5659211e531, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335352369687346323, guid: dd8c99a9fac9ecb4e9ede5659211e531, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7335352369687346323, guid: dd8c99a9fac9ecb4e9ede5659211e531, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7402799215371749379, guid: dd8c99a9fac9ecb4e9ede5659211e531, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd8c99a9fac9ecb4e9ede5659211e531, type: 3}
@@ -777,7 +805,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aeeca2901ac3b740ade887e8f45363c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 6
+  Speed: 3
+--- !u!114 &1469035539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469035537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aac1866ef913a8468047f9a0f3af041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigAsteroid: 0
+  LittleAsteroidPrefab: {fileID: 4581684564111305129, guid: 664bf13288916fa4cb5e607c7e77072b, type: 3}
 --- !u!1 &1649523046
 GameObject:
   m_ObjectHideFlags: 0
@@ -5684,13 +5726,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2289844648754228502, guid: 664bf13288916fa4cb5e607c7e77072b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4576409605642488365, guid: 664bf13288916fa4cb5e607c7e77072b, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4576409605642488365, guid: 664bf13288916fa4cb5e607c7e77072b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3096924
+      objectReference: {fileID: 0}
+    - target: {fileID: 4576409605642488365, guid: 664bf13288916fa4cb5e607c7e77072b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3096924
+      objectReference: {fileID: 0}
+    - target: {fileID: 4576409605642488365, guid: 664bf13288916fa4cb5e607c7e77072b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3096924
+      objectReference: {fileID: 0}
+    - target: {fileID: 4576409605642488365, guid: 664bf13288916fa4cb5e607c7e77072b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.28
+      value: -1.7113
       objectReference: {fileID: 0}
     - target: {fileID: 4576409605642488365, guid: 664bf13288916fa4cb5e607c7e77072b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5698,7 +5756,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4576409605642488365, guid: 664bf13288916fa4cb5e607c7e77072b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.3
+      value: 7.89
       objectReference: {fileID: 0}
     - target: {fileID: 4576409605642488365, guid: 664bf13288916fa4cb5e607c7e77072b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5732,7 +5790,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: LittleAsteroid Variant
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 4581684564111305129, guid: 664bf13288916fa4cb5e607c7e77072b, type: 3}
+      propertyPath: m_TagString
+      value: Asteroid
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252005010664697087, guid: 664bf13288916fa4cb5e607c7e77072b, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5252005010664697087, guid: 664bf13288916fa4cb5e607c7e77072b, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 4574496180968853955, guid: 664bf13288916fa4cb5e607c7e77072b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 664bf13288916fa4cb5e607c7e77072b, type: 3}
 --- !u!1 &1968092402
 GameObject:
@@ -15391,7 +15462,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aeeca2901ac3b740ade887e8f45363c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 6
+  Speed: 2
+--- !u!114 &2069808037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2069808035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7aac1866ef913a8468047f9a0f3af041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BigAsteroid: 1
+  LittleAsteroidPrefab: {fileID: 4581684564111305129, guid: 664bf13288916fa4cb5e607c7e77072b, type: 3}
 --- !u!1001 &7676806901312948969
 PrefabInstance:
   m_ObjectHideFlags: 0
