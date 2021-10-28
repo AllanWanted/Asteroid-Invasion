@@ -11,10 +11,11 @@ public class DestroyAsteroid : MonoBehaviour
 
     void Colision()
     {
-        if(BigAsteroid)
+        if (BigAsteroid == true)
         {
             Instantiate(LittleAsteroidPrefab, transform.position + Random.onUnitSphere * .3f, Quaternion.identity);
-            Instantiate(LittleAsteroidPrefab, transform.position + Random.onUnitSphere *.3f, Quaternion.identity);
+            Instantiate(LittleAsteroidPrefab, transform.position + Random.onUnitSphere * .3f, Quaternion.identity);
+           
             Destroy(gameObject);
         }
         else
@@ -22,4 +23,13 @@ public class DestroyAsteroid : MonoBehaviour
             Destroy(gameObject);
         }
     }
+    private void OnTriggerEnter(Collider Col)
+    {
+        if (Col.CompareTag("Bullet"))
+        {
+            Destroy(gameObject);
+            
+        }
+    }
+
 }

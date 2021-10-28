@@ -7,9 +7,8 @@ using UnityEngine;
 public class AsteroidScript : MonoBehaviour
 {
     public float Speed = 6;
-     Rigidbody rig;
+    Rigidbody rig;
 
-    
 
     // Start is called before the first frame update
     void Start()
@@ -18,13 +17,11 @@ public class AsteroidScript : MonoBehaviour
         rig.velocity = Vector3.back * Speed + Vector3.right * Random.Range(-1, 1);
         rig.angularVelocity = new Vector3(Random.Range(-5, 5), Random.Range(-5, 5), Random.Range(-5, 5));
     }
-
-    
-    void Colision()
+    private void OnTriggerEnter(Collider col)
     {
-
+        if (col.CompareTag("Player")) ;
+        col.SendMessage("Damage", SendMessageOptions.DontRequireReceiver);
     }
-    
-        
-   
+
+
 }

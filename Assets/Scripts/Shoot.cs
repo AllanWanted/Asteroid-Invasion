@@ -7,15 +7,20 @@ public class Shoot : MonoBehaviour
     public Transform LanzadorL;
     public Transform LanzadorR;
 
-    public GameObject ShooterPrefab;
+    public GameObject BulletPrefab;
+
+    
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetButtonDown("Jump"))
         {
-            Instantiate(ShooterPrefab, LanzadorL.position, ShooterPrefab.transform.rotation);
-            Instantiate(ShooterPrefab, LanzadorR.position, ShooterPrefab.transform.rotation);
+            Instantiate(BulletPrefab, LanzadorL.position, BulletPrefab.transform.rotation);
+            Instantiate(BulletPrefab, LanzadorR.position, BulletPrefab.transform.rotation);
+
+            
         } 
     }
+    
 }
