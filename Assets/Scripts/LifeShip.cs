@@ -37,7 +37,7 @@ public class LifeShip : MonoBehaviour
         }
         else
         {
-            SceneManager.LoadScene("Perder");
+            SceneManager.LoadScene("Perdio");
         }
 
 
