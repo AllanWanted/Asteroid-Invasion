@@ -13,8 +13,8 @@ public class DestroyAsteroid : MonoBehaviour
     {
         if (BigAsteroid == true)
         {
-            Instantiate(LittleAsteroidPrefab, transform.position + Random.onUnitSphere * .3f, Quaternion.identity);
-            Instantiate(LittleAsteroidPrefab, transform.position + Random.onUnitSphere * .3f, Quaternion.identity);
+            Instantiate(LittleAsteroidPrefab, transform.position + Random.onUnitSphere * 10, Quaternion.identity);
+            Instantiate(LittleAsteroidPrefab, transform.position + Random.onUnitSphere * 10, Quaternion.identity);
            
             Destroy(gameObject);
         }

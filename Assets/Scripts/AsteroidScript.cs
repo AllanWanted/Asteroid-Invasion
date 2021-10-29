@@ -19,7 +19,7 @@ public class AsteroidScript : MonoBehaviour
     }
     private void OnTriggerEnter(Collider col)
     {
-        if (col.CompareTag("Player")) ;
+        if (col.CompareTag("Player"))
         col.SendMessage("Damage", SendMessageOptions.DontRequireReceiver);
     }
 
