@@ -13,6 +13,8 @@ public class LifeShip : MonoBehaviour
     public Sprite DosVidas;
     public Sprite UnaVida;
 
+    public AudioSource au;
+
     private void Start()
     {
         CantidadDeVidas = 3;
@@ -26,14 +28,18 @@ public class LifeShip : MonoBehaviour
         if(CantidadDeVidas == 3)
         {
             Img.sprite = TresVidas;
+            au.Play();
+
         }
         else if (CantidadDeVidas == 2)
         {
             Img.sprite = DosVidas;
+            au.Play();
         }
         else if (CantidadDeVidas == 1)
         {
             Img.sprite = UnaVida;
+            au.Play();
         }
         else
         {

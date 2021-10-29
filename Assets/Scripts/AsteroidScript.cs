@@ -9,6 +9,8 @@ public class AsteroidScript : MonoBehaviour
     public float Speed = 6;
     Rigidbody rig;
 
+    
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +23,7 @@ public class AsteroidScript : MonoBehaviour
     {
         if (col.CompareTag("Player"))
         col.SendMessage("Damage", SendMessageOptions.DontRequireReceiver);
+        
     }
 
 
