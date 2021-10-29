@@ -9,6 +9,7 @@ public class Shoot : MonoBehaviour
 
     public GameObject BulletPrefab;
 
+    public AudioSource au;
     
 
     // Update is called once per frame
@@ -16,6 +17,8 @@ public class Shoot : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
+            au.Play();
+
             Instantiate(BulletPrefab, LanzadorL.position, BulletPrefab.transform.rotation);
             Instantiate(BulletPrefab, LanzadorR.position, BulletPrefab.transform.rotation);
 
