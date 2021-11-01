@@ -5,10 +5,11 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class LifeShip : MonoBehaviour
-{
+{   
+    //variables para la vida
     public int CantidadDeVidas = 3;
     public Image Img;
-
+    // aca se utlizara los sprites de corazones para que represente la vida de la nave
     public Sprite TresVidas;
     public Sprite DosVidas;
     public Sprite UnaVida;
